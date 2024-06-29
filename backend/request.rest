@@ -2,8 +2,18 @@ POST http://localhost:3000/api/services
 Content-Type: application/json
 
 {
-    "name": "Algum serviço",
+    "name": "Algum serviço 3",
     "description": "Alguma descrição",
-    "price": 1400,
+    "price": 1700,
     "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
 }
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/667ecd8ab836e6c77ee456a1
+
+###
+DELETE http://localhost:3000/api/services/667eec1edf5db0631a50aa66
+
