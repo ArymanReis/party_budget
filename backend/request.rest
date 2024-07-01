@@ -1,12 +1,12 @@
 POST http://localhost:3000/api/services
 Content-Type: application/json
 
-{
-    "name": "Algum serviço 3",
-    "description": "Alguma descrição",
-    "price": 1700,
-    "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
-}
+    {
+        "name": "Decoração",
+        "description": "Escolha a decoração para sua festa, e nós a montamos.",
+        "price": 1400,
+        "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
 
 ###
 GET http://localhost:3000/api/services
@@ -17,3 +17,74 @@ GET http://localhost:3000/api/services/667ecd8ab836e6c77ee456a1
 ###
 DELETE http://localhost:3000/api/services/667eec1edf5db0631a50aa66
 
+###
+PUT http://localhost:3000/api/services/667eeb66df5db0631a50aa5f
+Content-Type: application/json
+
+{
+    "name": "TESTE DE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 27000000,
+    "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 1700,
+            "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
+        },        
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1000,
+            "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
+        }        
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/66800ca9241b7547e0f0638d
+
+###
+DELETE http://localhost:3000/api/parties/66800ca9241b7547e0f0638d
+
+###
+PUT http://localhost:3000/api/parties/66800dd7241b7547e0f0638f
+Content-Type: application/json
+
+{
+    "title": "Meu evento 5",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 2700,
+            "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
+        },        
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1000,
+            "image": "https://preservepipa.com/wp-content/uploads/2022/12/O-que-fazer-em-Pipa-em-janeiro-surf.jpeg"
+        }        
+    ]
+}
