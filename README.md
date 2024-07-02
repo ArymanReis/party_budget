@@ -5,9 +5,9 @@
 - Intituição: Udemy
 
 #### Imagem do projeto
-##### Nome: Contador regressivo comemoração.
+##### Nome: Planejador de evento e seus serviços.
 
-##### Link: https://contador-regressivo-react-3zmii2vyd-aryman-reis-projects.vercel.app/
+##### Link: https://party-budget.vercel.app/
 
 <img align="center" src="/frontend/public/captura.png" alt="imagem do projeto"/>
 
