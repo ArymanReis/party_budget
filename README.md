@@ -9,7 +9,7 @@
 
 ##### Link: https://contador-regressivo-react-3zmii2vyd-aryman-reis-projects.vercel.app/
 
-<img align="center" src="party_budget/frontend/public/captura.png" alt="imagem do projeto"/>
+<img align="center" src="/frontend/public/captura.png" alt="imagem do projeto"/>
 
 #### Tecnologias Usadas no projeto
 
