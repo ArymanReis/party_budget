@@ -6,7 +6,7 @@ async function main() {
 
         mongoose.set("strictQuery", true);
 
-        await mongoose.connect("mongodb+srv://arymanreis:Ey6QverlgvP0Jew2@cluster0.8beqpgj.mongodb.net/");
+        await mongoose.connect("mongodb+srv://arymanreis:passWordDB@cluster0.8beqpgj.mongodb.net/");
 
         console.log("Conectado ao banco!");
 
